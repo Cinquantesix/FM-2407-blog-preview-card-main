@@ -144,6 +144,8 @@ main {
 .cardTxt .content {
   font-size: 0.875rem;
   font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  color: var(--grey);
+  font-weight: 700;
 }
 
 .cardAuthor {
@@ -160,4 +162,24 @@ main {
 .cardAuthor .name {
   font-size: .875rem;
   font-weight: 900;
+}
+
+.attribution { 
+  position: absolute;
+  z-index: -1;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%,0);
+  font-size: 11px; 
+  text-align: center;
+}
+
+.attribution a { 
+  color: var(--black); 
+  font-weight: 900;
+  transition: all .3s ease;
+}
+
+.attribution a:hover { 
+  color: var(--white); 
 }
